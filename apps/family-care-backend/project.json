@@ -1,0 +1,67 @@
+{
+  "name": "family-care-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/family-care-backend/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/family-care-backend",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "apps/family-care-backend/src/main.ts",
+        "tsConfig": "apps/family-care-backend/tsconfig.app.json",
+        "assets": ["apps/family-care-backend/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "family-care-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "family-care-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "family-care-backend:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/family-care-backend/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

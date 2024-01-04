@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es2015",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      // Agrega otras configuraciones comunes si es necesario
+    },
+    "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
+  
