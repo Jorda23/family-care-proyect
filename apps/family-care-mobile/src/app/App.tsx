@@ -10,7 +10,7 @@ export const App = () => {
       <SafeAreaView>
         <View style={{ backgroundColor: 'gray', padding: 10 }}>
           <Text testID="heading" style={{ color: 'white' }}>
-            App movile test
+            App movile
           </Text>
         </View>
 
