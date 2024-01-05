@@ -11,6 +11,10 @@ export default defineConfig({
     port: 4200,
     host: 'localhost',
   },
+  
+  define: {
+    global: {}
+  },
 
   preview: {
     port: 4300,
