@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "resolveJsonModule": true,
+    "strict": true,
     "declaration": true,
     "paths": {
       "@familyCare/common": ["libs/family-care-common/src/index.ts"]
