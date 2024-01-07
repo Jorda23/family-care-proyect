@@ -1,8 +1,8 @@
 import React from 'react'
 import { Text } from 'react-native'
 
-export const Screen1 = () => {
+export const Screen4 = () => {
   return (
-    <Text>Screen1 hhgljkdfhgkjdf</Text>
+    <Text>Screen4</Text>
   )
 }

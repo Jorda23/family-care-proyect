@@ -19,7 +19,11 @@
     "@babel/core": "*",
     "@react-navigation/native": "*",
     "@react-navigation/bottom-tabs": "*",
-    "react-native-screens": "*"
+    "react-native-screens": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-vector-icons": "*",
+    "react-native-paper": "*",
+    "expo-local-authentication": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/family-care-mobile && cp package-lock.json apps/family-care-mobile",
