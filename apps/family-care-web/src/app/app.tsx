@@ -4,7 +4,7 @@ import { Avatar, Button } from 'monday-ui-react-core';
 export function App() {
   return (
     <>
-      <Button style={{ backgroundColor: 'green' }}>hola como estas</Button>
+      <Button style={{ backgroundColor: 'green' }}>Hola Mundo</Button>
 
       <Avatar
         ariaLabel="Hadas Fahri"

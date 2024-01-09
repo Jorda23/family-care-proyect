@@ -2,14 +2,13 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
-// import Navigation from './pages/Navigation';
-import Login from './pages/Login';
+import { Text } from 'react-native'
 
 export const App = () => {
   return (
     <PaperProvider>
       <StatusBar barStyle="dark-content" />
-      <Login />
+      <Text>Hola Mundo</Text>
     </PaperProvider>
   );
 };

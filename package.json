@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:backend": "nx serve family-care-backend",
-    "start:web": "nx serve family-care-web",
-    "start:mobile": "nx serve family-care-mobile"
+    "build:backend": "nx build family-care-backend",
+    "serve:backend": "nx serve family-care-backend",
+    "start:mobile": "nx run family-care-mobile:run-android",
+    "build:mobile": "nx run family-care-mobile:build",
+    "build:web": "nx run family-care-web:build",
+    "serve:web": "nx run family-care-web:serve"
   },
   "private": true,
   "devDependencies": {

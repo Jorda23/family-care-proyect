@@ -14,6 +14,7 @@ node_modules
 .env.production
 .env.staging
 
+
 # IDEs and editors
 /.idea
 .project
