@@ -13,7 +13,7 @@
         "outputPath": "dist/apps/family-care-backend",
         "format": ["cjs"],
         "bundle": false,
-        "main": "apps/family-care-backend/src/main.ts",
+        "main": "apps/family-care-backend/src/server.ts",
         "tsConfig": "apps/family-care-backend/tsconfig.app.json",
         "assets": ["apps/family-care-backend/src/assets"],
         "generatePackageJson": true,

@@ -12,8 +12,17 @@
   ],
   "compilerOptions": {
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "commonjs",
     "paths": {
       "@familyCare/common": ["libs/family-care-common/src/index.ts"]
-    }
+    },
+    "moduleResolution": "node",
+    "outDir": "build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "sourceMap": true,
   }
 }

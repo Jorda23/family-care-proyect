@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { TextInput, Button, Text, Checkbox } from 'react-native-paper';
+import { BiometricAuthScreen } from '../../components/BiometricAuthScreen';
 
 const Login = () => {
   const [email, setEmail] = React.useState('');
@@ -74,7 +75,7 @@ const Login = () => {
         Iniciar Sesión
       </Button>
 
-    
+    <BiometricAuthScreen />
     </View>
   );
 };
